@@ -1,0 +1,22 @@
+@keyframes eyeSizeChange {
+  0% {
+    width: 100px;
+    height: 90px;
+  }
+  50% {
+    width: 50px;
+    height: 45px;
+  }
+  25% {
+    width: 25px;
+    height: 22.5px;
+  }
+  100% {
+    width: 100px;
+    height: 90px;
+  }
+}
+
+.robot-eye-left {
+  animation: eyeSizeChange 2s infinite;
+}
