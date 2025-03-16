@@ -63,6 +63,7 @@ body {
   border-bottom-right-radius: 60px;
   position: relative;
     top: 200px;
+    right: 10px;
 }
 
 .robot-ear-right {
@@ -94,10 +95,15 @@ body {
   opacity: 50%
 }
 
+.robot-nose:hover {
+  cursor: pointer;
+}
+
 .robot-teeth {
   position: absolute;
   display: flex;
   flex-direction: row;
+  align-items: center;
   bottom: 40px;
   left: 30%;
   flex-wrap: wrap;

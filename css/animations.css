@@ -1,3 +1,5 @@
+
+/* Eye size change animation */
 @keyframes eyeSizeChange {
   0% {
     width: 100px;
@@ -20,3 +22,53 @@
 .robot-eye-left {
   animation: eyeSizeChange 2s infinite;
 }
+
+
+/* robot-let-ear rotation */
+@keyframes rotateInfinite {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.robot-ear-left {
+  animation: rotateInfinite 2.5s linear infinite;
+}
+
+/* robot-right-ear animation */
+@keyframes moveRightFade {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+}
+
+.robot-ear-right {
+  animation: moveRightFade 1.5s ease-in-out infinite;
+}
+
+@keyframes openCloseMouth {
+  0%, 100% {
+
+  }
+  50% {
+    transform: scaleY(0.5);
+    transform: scaleX(0.9);
+    transform: translateX(-10px);
+    height: 100px
+  }
+}
+
+.robot-teeth:hover {
+  border-radius: 15%;
+  animation: openCloseMouth .6s infinite;
+  cursor: pointer;
+}
+
