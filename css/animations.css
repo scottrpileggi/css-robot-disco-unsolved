@@ -54,6 +54,7 @@
   animation: moveRightFade 1.5s ease-in-out infinite;
 }
 
+/* robot-teeth animation */
 @keyframes openCloseMouth {
   0%, 100% {
 
@@ -72,3 +73,58 @@
   cursor: pointer;
 }
 
+/* robot-nose animation */
+@keyframes rotateMirror {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(-180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.robot-nose {
+  animation: rotateMirror 4s ease-in-out infinite;
+}
+
+/* robot-eye-right animation */
+
+@keyframes snakeMove1 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(0) translateY(100px);
+    width: 25px;
+  }
+  50% {
+    transform: translateX(40px) translateY(180deg);
+    width: 130px;
+  }
+  75% {
+    transform: translateX(80px) translateY(20000px);
+    width: 25px;
+  }
+}
+
+@keyframes snakeRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(180deg);
+  }
+}
+
+.robot-eye-right {
+  animation: snakeMove1 4s ease-in-out infinite, snakeRotate 4s steps(1) infinite;
+}

@@ -91,8 +91,9 @@ body {
   border-left: 100px solid transparent;
   position: absolute;
   bottom: 140px;
-  left: 140px;
-  opacity: 50%
+  left: 200px;
+  opacity: 50%;
+  z-index: 1;
 }
 
 .robot-nose:hover {
