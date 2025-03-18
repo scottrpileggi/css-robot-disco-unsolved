@@ -56,9 +56,6 @@
 
 /* robot-teeth animation */
 @keyframes openCloseMouth {
-  0%, 100% {
-
-  }
   50% {
     transform: scaleY(0.5);
     transform: scaleX(0.9);
@@ -94,18 +91,18 @@
 
 @keyframes snakeMove1 {
   0% {
-    transform: translateX(0) translateY(0);
+    transform: translateX(0);
   }
   25% {
-    transform: translateX(0) translateY(100px);
+    transform: translateY(100px);
     width: 25px;
   }
   50% {
-    transform: translateX(40px) translateY(180deg);
+    transform: translateX(40px);
     width: 130px;
   }
   75% {
-    transform: translateX(80px) translateY(20000px);
+    transform: translateX(80px); 
     width: 25px;
   }
 }
