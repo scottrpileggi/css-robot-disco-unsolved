@@ -128,3 +128,41 @@
 .robot-eye-right {
   animation: snakeMove1 4s ease-in-out infinite, snakeRotate 4s steps(1) infinite;
 }
+
+@keyframes moveHair {
+  50% {
+    transform: translateY(1px);
+  }
+}
+
+.robot-hair-style {animation: moveHair 2s ease-in-out infinite;}
+
+@keyframes hairColor1 {
+  50% {
+    background-color: turquoise;
+  }
+}
+
+.robot-hair-one {
+  animation: hairColor1 2s ease-in-out infinite;
+}
+
+@keyframes hairColor2 {
+  50% {
+    background-color: yellow;
+  }
+}
+
+.robot-hair-two {
+  animation: hairColor2 2s ease-in-out infinite;
+}
+
+@keyframes hairColor3 {
+  50% {
+    background-color: yellowgreen;
+  }
+}
+
+.robot-hair-three {
+  animation: hairColor3 2s ease-in-out infinite;
+}
